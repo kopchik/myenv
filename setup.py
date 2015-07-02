@@ -5,7 +5,6 @@ from myenv import VERSION
 setup(
     name = "myenv",
     version = VERSION,
-    packages = find_packages(),
     scripts = ['myenv.py'],
 
     entry_points = {
