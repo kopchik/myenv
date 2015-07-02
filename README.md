@@ -6,7 +6,7 @@ It's like /usr/bin/env, but supports arguments passing to
 the script. E.g:
 
 ~~~~
-cd /tmp  # the right place for temporary files
+cd /tmp                      # the right place for temporary files
 script="./test.file"
 cat << EOF > $script
 #!/usr/bin/myenv -- python3 -O
@@ -18,7 +18,7 @@ EOF
 
 chmod +x $script
 $script
-cd -  # return to the original dir
+cd -                         # return to the original dir
 ~~~~
 
 The '--' is mandatory because -O would treated as an argument
